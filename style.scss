@@ -115,9 +115,15 @@ $bg-primary: #e8e2d4;
     margin: 0;
   }
 
+  h2 {
+    margin: 0;
+  }
+
   .es-kv {
     margin: 0;
     padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     position: relative;
 
     &__logo {
@@ -131,16 +137,25 @@ $bg-primary: #e8e2d4;
       position: relative;
       margin: 0;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
-      padding: 15px;
+      @include text-gazpacho-bold;
+      padding-top: 5px;
+      padding-bottom: 15px;
       text-align: center;
-      text-transform: uppercase;
-      font-size: 28px;
+      font-size: 35px;
       font-weight: 700;
+
+      &--small {
+        @include text-gazpacho-bold;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    &__subtitle {
+      @include text-gazpacho-bold;
+      text-align: center;
+      font-size: 18px;
+      padding-bottom: 15px;
     }
 
     &__packshot {
@@ -156,56 +171,17 @@ $bg-primary: #e8e2d4;
     }
 
     &__img {
-      max-width: 75%;
+      max-width: 60%;
       display: block;
       margin: 0 auto;
     }
 
     &__text {
-      margin: 0 auto;
-      width: 80%;
-      font-size: 20px;
       @include text-hurme-regular;
-      text-align: center;
-      padding: 0 15px 30px;
-    }
-  }
-
-  .es-possibilities {
-    margin: 30px 0 0;
-
-    &__title {
-      position: relative;
-      margin: 0;
-      padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
-      padding: 15px 15px 0;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 28px;
-      font-weight: 700;
-    }
-    &__subtitle {
-      margin: 0;
-      padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      padding-top: 20px;
-      font-size: 28px;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
-      text-align: center;
-    }
-
-    &__img {
-      max-width: 100%;
-      display: block;
       margin: 0 auto;
+      text-align: center;
+      padding: 0 10px;
+      font-size: 16px;
     }
   }
 
@@ -217,45 +193,100 @@ $bg-primary: #e8e2d4;
       position: relative;
       margin: 0;
       padding: 0;
-      line-height: inherit;
       margin: 0 auto;
       color: $primary;
       padding: 25px;
       text-align: center;
-      text-transform: uppercase;
       font-size: 28px;
+
+      &--large {
+        display: block;
+        text-align: right;
+        font-size: 32px;
+      }
     }
-    &__titleBig {
-      position: relative;
-      margin: 0;
-      padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      margin: 0 auto;
-      color: $primary;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
-      padding: 25px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 36px;
-      font-weight: 700;
-    }
+
     &__text {
       width: 90%;
       margin: 0;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      margin: 0 auto;
-      font-family: 'HurmeGeometricSans3-Light', sans-serif;
+      @include text-hurme-regular;
+      font-weight: 500;
       color: $primary;
       padding: 0 15px 25px;
-      font-weight: 100;
-      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .es-possibilities {
+    margin: 30px 0 0;
+
+    &__title {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      @include text-gazpacho-regular;
+      font-weight: 500;
+      padding: 15px 15px 0;
+      font-size: 20px;
+      font-weight: 700;
+
+      &--first {
+        margin-top: -30px;
+        text-align: right;
+      }
+
+      &--second {
+        position: absolute;
+        top: 44%;
+        left: 0;
+        color: $bg-primary;
+      }
+    }
+
+    &__title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title-group {
+      position: relative;
+      max-width: 50%;
+    }
+
+    &__subtitle {
+      margin: 0;
+      padding: 0;
+      padding-top: 20px;
+      padding-right: 10px;
+      font-size: 20px;
+      @include text-gazpacho-bold;
+      text-align: right;
+    }
+
+    &__img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      margin-top: -103px;
+    }
+
+    &__text {
+      padding: 15px;
+      @include text-hurme-regular;
+    }
+
+    &__packshot {
+      @include img;
+      max-width: 50%;
+    }
+
+    .polygon {
+      width: 235px;
+      height: 200px;
+      background-color: black;
+      clip-path: polygon(0% 50%, 100% 25%, 110% 113%, 0% 74%);
     }
   }
 
@@ -275,11 +306,7 @@ $bg-primary: #e8e2d4;
       position: relative;
       margin: 0;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
+      @include text-hurme-bold;
       padding: 15px 15px 0;
       text-align: center;
       text-transform: uppercase;
@@ -307,26 +334,85 @@ $bg-primary: #e8e2d4;
       align-items: center;
       justify-content: space-around;
     }
+
+    &__mobile-container {
+      position: relative;
+    }
+
     &__single {
       height: 100%;
       position: relative;
+
+      &--second {
+        // margin-top: -100px;
+      }
     }
     &__desc {
       margin: 0;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
-      font-size: 30px;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      @include text-hurme-bold;
+      color: $secondary;
+      font-size: 35px;
       text-align: center;
       padding-top: 20px;
+
+      &--first {
+        top: 20%;
+        left: 24%;
+      }
+
+      &--second {
+        top: 32%;
+        left: 41%;
+      }
+
+      &--third {
+        top: 21%;
+        left: 16%;
+      }
     }
+
+    &__desc-mobile {
+      &--first,
+      &--second,
+      &--third {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        @include text-hurme-bold;
+        color: $secondary;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      &--first {
+        top: 12%;
+        left: 24%;
+      }
+
+      &--second {
+        top: 41%;
+        left: 37%;
+      }
+
+      &--third {
+        top: 61%;
+        left: 16%;
+      }
+    }
+
+    &__desktop-container {
+      display: none;
+    }
+
     &__img {
       max-width: 100%;
       display: block;
       margin: 0 auto;
+      min-width: 250px;
     }
   }
 
