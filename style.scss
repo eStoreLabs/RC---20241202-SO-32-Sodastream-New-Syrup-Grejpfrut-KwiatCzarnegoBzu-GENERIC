@@ -524,15 +524,17 @@ $bg-primary: #e8e2d4;
     }
 
     &__group {
+      max-width: 400px;
       padding-left: 10px;
       padding-right: 10px;
     }
 
     &__group-list {
-      max-width: 500px;
+      max-width: 400px;
     }
 
     &__group-title {
+      max-width: 400px;
       margin-bottom: 10px;
     }
 
@@ -607,7 +609,7 @@ $bg-primary: #e8e2d4;
       margin: 0 auto;
       width: 100%;
       position: relative;
-      padding-bottom: 56.25%;
+      padding-bottom: 46.25%;
       height: 0;
     }
     &__iframe {
@@ -694,8 +696,16 @@ $bg-primary: #e8e2d4;
     }
 
     .es-video {
+      margin-top: -50px;
+
       &__img {
         max-width: 300px;
+      }
+
+      &__text {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
       }
     }
 
@@ -704,9 +714,31 @@ $bg-primary: #e8e2d4;
         top: -25px;
       }
     }
+
+    .es-lemonade {
+      &__image-group-text {
+        top: 45%;
+        left: 20%;
+        font-size: 35px;
+      }
+    }
   }
 
   @media screen and (min-width: 600px) {
+    .es-title {
+      font-size: 46px;
+    }
+
+    .es-video__subtitle-second {
+      font-size: 36px;
+    }
+
+    .es-photo {
+      &__text {
+        font-size: 36px;
+      }
+    }
+
     .es-recipes {
       display: flex;
 
@@ -737,6 +769,12 @@ $bg-primary: #e8e2d4;
         z-index: 1;
         font-size: 13px;
       }
+
+      &__day-night-label {
+        &--first {
+          top: 16%;
+        }
+      }
     }
 
     .es-possibilities {
@@ -756,6 +794,11 @@ $bg-primary: #e8e2d4;
         min-width: 50%;
       }
 
+      &__right {
+        min-width: 60%;
+        margin-left: -50px;
+      }
+
       &__content {
         display: flex;
         align-items: center;
@@ -769,7 +812,7 @@ $bg-primary: #e8e2d4;
       }
 
       &__title {
-        font-size: 25x;
+        font-size: 25px;
 
         &--first,
         &--second {
@@ -788,6 +831,26 @@ $bg-primary: #e8e2d4;
       &__left,
       &__right {
         max-width: 50%;
+      }
+    }
+
+    .es-lemonade {
+      margin-top: -100px;
+
+      &__subtitle {
+        font-size: 26px;
+      }
+
+      &__image {
+        max-width: 50%;
+
+        &--bottle {
+          max-width: 25%;
+        }
+
+        &--coctail {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -821,7 +884,7 @@ $bg-primary: #e8e2d4;
     .es-kv {
       background: url('./static/img/kv-bg.png') no-repeat center center;
       background-size: cover;
-      min-height: 700px;
+      min-height: 800px;
       padding-bottom: 300px;
 
       &__packshot {
@@ -857,7 +920,7 @@ $bg-primary: #e8e2d4;
       &__text {
         padding-top: 30px;
         padding-bottom: 30px;
-        width: 80%;
+        width: 67%;
         margin: 0 auto;
         text-align: center;
         font-size: 17px;
@@ -873,6 +936,11 @@ $bg-primary: #e8e2d4;
     .es-info {
       &__titleBig {
         font-size: 50px;
+      }
+
+      &__title--large {
+        font-size: 42px;
+        margin-right: 50px;
       }
     }
 
@@ -902,7 +970,22 @@ $bg-primary: #e8e2d4;
         }
       }
 
+      &__day-night-recipe-content-title {
+        margin-bottom: 20px;
+        @include text-gazpacho-bold;
+        font-size: 35px;
+
+        &--small {
+          font-size: 16px;
+        }
+      }
+
       &__day-night-label {
+        font-size: 80px;
+
+        &--first {
+          top: 10%;
+        }
         &--second {
           top: 2%;
           left: 0%;
@@ -923,6 +1006,67 @@ $bg-primary: #e8e2d4;
         }
       }
     }
+
+    .es-lemonade {
+      &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+
+        &--1 {
+          align-items: flex-start;
+        }
+
+        &--2 {
+          margin-top: -150px;
+        }
+
+        &--3 {
+          margin-top: -150px;
+        }
+      }
+
+      &__image {
+        &--grapefruit {
+          margin-top: 50px;
+        }
+
+        &--coctail {
+          max-width: 100%;
+        }
+      }
+
+      &__texts {
+        max-width: 50%;
+        padding-left: 10%;
+      }
+
+      &__text {
+        max-width: 46%;
+        // font-size: 20px;
+
+        &--first {
+          // max-width: 36%;
+        }
+
+        &--second {
+          max-width: 63%;
+        }
+
+        &--third {
+          max-width: 76%;
+        }
+      }
+
+      &__title {
+        font-size: 70px;
+      }
+
+      &__subtitle {
+        font-size: 40px;
+      }
+    }
   }
   @media screen and (min-width: 998px) {
     .es-kv {
@@ -931,8 +1075,14 @@ $bg-primary: #e8e2d4;
         font-size: 40px;
       }
 
+      &__img {
+        max-width: 40%;
+      }
+
       &__title-group {
         max-width: 455px;
+        left: 10%;
+        top: -1%;
       }
 
       &__packshot {
@@ -952,8 +1102,23 @@ $bg-primary: #e8e2d4;
     }
 
     .es-possibilities {
+      margin-top: -125px;
+
       &__title-container {
         top: 100px;
+      }
+
+      &__left {
+        // max-width: 40%;
+        // min-width: auto;
+      }
+
+      &__packshot {
+        // max-width: 25%;
+      }
+
+      &__right {
+        margin-left: -150px;
       }
 
       &__title {
@@ -964,29 +1129,183 @@ $bg-primary: #e8e2d4;
           font-size: 45px;
         }
       }
+
+      .es-possibilities {
+        &__content {
+          margin-top: -50px;
+        }
+
+        &__packshot {
+          width: 200px;
+          margin-top: -200px;
+        }
+
+        &__text {
+          font-size: 20px;
+          width: 84%;
+        }
+
+        &__title {
+          // font-size: 26px;
+        }
+      }
     }
 
     .es-info {
       &__title {
-        font-size: 36px;
+        // font-size: 36px;
       }
 
       &__text {
+        width: 420px;
         font-size: 20px;
       }
     }
 
     .es-video {
+      &__text {
+        font-size: 18px;
+        max-width: 79%;
+
+        &--second {
+          max-width: 75%;
+        }
+      }
+
       &__title {
-        font-size: 36px;
+        // font-size: 36px;
       }
     }
 
     .es-recipes {
+      &__day-night-title {
+        font-size: 20px;
+      }
+
+      &__day-night-description {
+        font-size: 20px;
+      }
+
+      &__day-night-group {
+        max-width: 430px;
+      }
+
       &__day-night-recipe-content {
         padding-left: 30px;
         padding-right: 30px;
         font-size: 24px;
+      }
+
+      &__day-night-label {
+        font-size: 100px;
+
+        &--first {
+          top: 8%;
+          left: 50%;
+        }
+        &--second {
+          top: 2%;
+          left: 5%;
+        }
+      }
+    }
+
+    .es-lemonade {
+      &__image {
+        max-width: 50%;
+
+        &--bottle {
+          max-width: 20%;
+        }
+
+        &--coctail {
+          max-width: 100%;
+        }
+      }
+
+      &__image-group-text {
+        left: 23%;
+      }
+
+      &__text {
+        font-size: 20px;
+
+        &--first {
+          max-width: 36%;
+          // padding-left: 10%;
+        }
+
+        &--second {
+          // max-width: 63%;
+        }
+
+        &--third {
+          max-width: 73%;
+          margin-bottom: 70px;
+        }
+      }
+
+      &__group-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      &__group-list-item-description {
+        font-size: 20px;
+      }
+
+      &__group {
+        max-width: 500px;
+      }
+
+      &__group-title {
+        max-width: 500px;
+      }
+
+      &__group-list {
+        max-width: 500px;
+      }
+
+      &__texts {
+        // max-width: 50%;
+        padding-left: 0;
+      }
+    }
+
+    .es-video__subtitle-second {
+      font-size: 36px;
+    }
+
+    .es-photo {
+      &__text {
+        font-size: 36px;
+      }
+    }
+
+    .es-triple {
+      margin-top: -100px;
+
+      &__desc-mobile {
+        &--first,
+        &--second,
+        &--third {
+          font-size: 170px;
+        }
+
+        &--first {
+          top: 12%;
+          left: 22%;
+        }
+
+        &--second {
+          top: 44%;
+          left: 40%;
+        }
+
+        &--third {
+          top: 64%;
+          left: 13%;
+        }
       }
     }
   }
@@ -995,6 +1314,91 @@ $bg-primary: #e8e2d4;
     .es-kv {
       height: 100%;
       min-height: 1024px;
+    }
+
+    .es-title {
+      font-size: 56px;
+    }
+
+    .es-video__subtitle-second {
+      font-size: 36px;
+    }
+
+    .es-photo {
+      &__text {
+        font-size: 36px;
+      }
+    }
+
+    .es-video {
+      &__subtitle {
+        font-size: 30px;
+      }
+    }
+
+    .es-lemonade {
+      &__title {
+        font-size: 70px;
+      }
+    }
+
+    .es-info {
+      &__title {
+        font-size: 36px;
+      }
+    }
+
+    .es-possibilities {
+      &__title {
+        font-size: 75px;
+
+        &--small {
+          font-size: 36px;
+        }
+
+        // &--first,
+        // &--second {
+        //   font-size: 45px;
+        // }
+      }
+
+      &__subtitle {
+        margin-top: 100px;
+        margin-right: 160px;
+        font-size: 36px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .es-lemonade {
+      &__title {
+        font-size: 100px;
+      }
+
+      &__subtitle {
+        font-size: 55px;
+      }
+    }
+    .es-kv {
+      &__title-group {
+        max-width: 614px;
+        left: 5%;
+        top: 3%;
+      }
+
+      &__subtitle {
+        font-size: 23px;
+      }
+
+      &__text {
+        font-size: 20px;
+        width: 69%;
+      }
+    }
+
+    .es-video {
+      margin-top: -120px;
     }
   }
 
