@@ -118,6 +118,7 @@ body {
   font-family: "HurmeGeometricSans3-Regular";
   font-weight: 400;
   margin: 0 auto;
+  margin-bottom: 30px;
   text-align: center;
   padding: 0 10px;
   font-size: 16px;
@@ -154,6 +155,7 @@ body {
 }
 #es-rc-content.es-rc .es-possibilities {
   margin: 30px 0 0;
+  padding-top: 75px;
 }
 #es-rc-content.es-rc .es-possibilities__title {
   position: relative;
@@ -180,10 +182,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -60px;
 }
 #es-rc-content.es-rc .es-possibilities__title-group {
   position: relative;
   max-width: 50%;
+  min-width: 50%;
 }
 #es-rc-content.es-rc .es-possibilities__subtitle {
   margin: 0;
@@ -212,21 +217,11 @@ body {
   max-width: 100%;
   max-width: 50%;
 }
-#es-rc-content.es-rc .es-possibilities .polygon {
-  width: 235px;
-  height: 200px;
-  background-color: black;
-  -webkit-clip-path: polygon(0% 50%, 100% 25%, 110% 113%, 0% 74%);
-          clip-path: polygon(0% 50%, 100% 25%, 110% 113%, 0% 74%);
-}
 #es-rc-content.es-rc .es-photo__img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  padding: 20px 20px;
-}
-#es-rc-content.es-rc .es-triple {
-  padding: 0 15px;
+  padding: 5px 5px;
 }
 #es-rc-content.es-rc .es-triple__title {
   position: relative;
@@ -256,7 +251,6 @@ body {
 }
 #es-rc-content.es-rc .es-triple__wrapper {
   display: flex;
-  padding: 40px 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
@@ -297,15 +291,15 @@ body {
   position: absolute;
   top: 25px;
   left: 0;
-  font-family: "HurmeGeometricSans3-Bold";
-  font-weight: 700;
+  font-family: "HurmeGeometricSans3-Black";
+  font-weight: 800;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
 }
 #es-rc-content.es-rc .es-triple__desc-mobile--first {
   top: 12%;
-  left: 24%;
+  left: 23%;
 }
 #es-rc-content.es-rc .es-triple__desc-mobile--second {
   top: 41%;
@@ -323,6 +317,153 @@ body {
   display: block;
   margin: 0 auto;
   min-width: 250px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-title {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "HurmeGeometricSans3-Bold";
+  font-weight: 700;
+  font-size: 18px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-description {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+  font-family: "HurmeGeometricSans3-Regular";
+  font-weight: 400;
+  font-size: 16px;
+}
+#es-rc-content.es-rc .es-recipes__day-night {
+  position: relative;
+  margin-bottom: 50px;
+}
+#es-rc-content.es-rc .es-recipes__day-night--second {
+  margin-bottom: 100px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-label {
+  position: absolute;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Gazpacho-Bold";
+  font-weight: 700;
+  font-size: 60px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-label--first {
+  color: #ffffff;
+  top: 12%;
+  left: 40%;
+}
+#es-rc-content.es-rc .es-recipes__day-night-label--second {
+  color: #000000;
+  top: -6%;
+  left: 0%;
+}
+#es-rc-content.es-rc .es-recipes__img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+#es-rc-content.es-rc .es-recipes__img--night-desktop {
+  display: none;
+}
+#es-rc-content.es-rc .es-recipes__day-night-recipe-content-title {
+  margin-bottom: 20px;
+  font-family: "Gazpacho-Bold";
+  font-weight: 700;
+  font-size: 30px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-recipe-content-title--small {
+  margin-bottom: 20px;
+  font-family: "HurmeGeometricSans3-Regular";
+  font-weight: 400;
+  font-size: 16px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-recipe-content {
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 1;
+  font-size: 13px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-recipe-content-ingredients-list {
+  padding-left: 20px;
+}
+#es-rc-content.es-rc .es-recipes__day-night-recipe-content-ingredients-list li {
+  margin-bottom: 10px;
+}
+#es-rc-content.es-rc .es-lemonade__title {
+  margin-bottom: 10px;
+}
+#es-rc-content.es-rc .es-lemonade__subtitle {
+  margin-bottom: 10px;
+  font-family: "Gazpacho-Regular";
+  font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+}
+#es-rc-content.es-rc .es-lemonade__image {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+#es-rc-content.es-rc .es-lemonade__image--bottle {
+  max-width: 50%;
+  margin-bottom: 30px;
+}
+#es-rc-content.es-rc .es-lemonade__content {
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+#es-rc-content.es-rc .es-lemonade__text {
+  font-family: "HurmeGeometricSans3-Regular";
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#es-rc-content.es-rc .es-lemonade__group {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#es-rc-content.es-rc .es-lemonade__group-list {
+  max-width: 500px;
+}
+#es-rc-content.es-rc .es-lemonade__group-title {
+  margin-bottom: 10px;
+}
+#es-rc-content.es-rc .es-lemonade__group-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+#es-rc-content.es-rc .es-lemonade__group-list-item-description {
+  max-width: 60%;
+}
+#es-rc-content.es-rc .es-lemonade__group-list-item-image {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 70px;
+}
+#es-rc-content.es-rc .es-lemonade__bold {
+  font-family: "HurmeGeometricSans3-Bold";
+  font-weight: 700;
+}
+#es-rc-content.es-rc .es-lemonade__image-group {
+  position: relative;
+}
+#es-rc-content.es-rc .es-lemonade__image-group-text {
+  position: absolute;
+  top: 43%;
+  left: 16%;
+  font-family: "Gazpacho-Bold";
+  font-weight: 700;
+  font-size: 25px;
 }
 #es-rc-content.es-rc .es-your {
   background: linear-gradient(transparent 0%, transparent 50%, #e5dcd3 50%, #e5dcd3 100%);
@@ -357,34 +498,37 @@ body {
   padding: 0 15px 30px;
 }
 #es-rc-content.es-rc .es-video {
-  margin: 0 auto 64px;
-  width: 80%;
+  margin: 0 auto 34px;
+  width: 95%;
   position: relative;
 }
 #es-rc-content.es-rc .es-video__title {
   margin: 0;
   padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  text-transform: uppercase;
   font-size: 30px;
-  font-weight: 700;
-  font-family: "HurmeGeometricSans3-Bold", sans-serif;
   text-align: center;
-  margin-bottom: 32px;
-  margin-top: 32px;
-  padding: 0 16px;
+  margin-bottom: 20px;
 }
 #es-rc-content.es-rc .es-video__subtitle {
   margin: 0;
   padding: 0;
-  line-height: inherit;
-  color: inherit;
+  font-family: "Gazpacho-Regular";
+  font-weight: 400;
   text-align: center;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+#es-rc-content.es-rc .es-video__subtitle-second {
+  font-family: "Gazpacho-Bold";
+  font-weight: 700;
+  font-size: 23px;
+}
+#es-rc-content.es-rc .es-video__text {
+  font-family: "HurmeGeometricSans3-Regular";
+  font-weight: 400;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 #es-rc-content.es-rc .es-video__container {
   margin: 0 auto;
@@ -409,12 +553,93 @@ body {
   margin: 0 auto;
   max-width: 200px;
 }
+#es-rc-content.es-rc .es-photo__text {
+  font-size: 23px;
+}
 @media screen and (min-width: 500px) {
+  #es-rc-content.es-rc .es-recipes__day-night-recipe-content {
+    font-size: 16px;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night {
+    margin-bottom: 100px;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night-label--first {
+    top: 10%;
+    left: 44%;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night-label--second {
+    top: 3%;
+    left: 0%;
+  }
   #es-rc-content.es-rc .es-triple__wrapper {
     flex-wrap: nowrap;
   }
   #es-rc-content.es-rc .es-video__img {
     max-width: 300px;
+  }
+  #es-rc-content.es-rc .es-possibilities__title-container {
+    top: -25px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #es-rc-content.es-rc .es-recipes {
+    display: flex;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night {
+    max-width: 50%;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night--second {
+    padding-top: 100px;
+  }
+  #es-rc-content.es-rc .es-recipes__img--night-desktop {
+    display: block;
+  }
+  #es-rc-content.es-rc .es-recipes__img--night-mobile {
+    display: none;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night-recipe-content--dark {
+    top: 47%;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night-recipe-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+    font-size: 13px;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night-recipe-content--dark {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    z-index: 1;
+    color: #ffffff;
+  }
+  #es-rc-content.es-rc .es-possibilities {
+    margin: 30px 0 0;
+    padding-top: 75px;
+  }
+  #es-rc-content.es-rc .es-possibilities__title-container {
+    top: 100px;
+  }
+  #es-rc-content.es-rc .es-possibilities__title {
+    font-size: 25px;
+  }
+  #es-rc-content.es-rc .es-possibilities__left, #es-rc-content.es-rc .es-possibilities__right {
+    min-width: 50%;
+  }
+  #es-rc-content.es-rc .es-possibilities__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #es-rc-content.es-rc .es-info__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #es-rc-content.es-rc .es-info__left, #es-rc-content.es-rc .es-info__right {
+    max-width: 50%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -422,6 +647,7 @@ body {
     background: url("./static/img/kv-bg.png") no-repeat center center;
     background-size: cover;
     min-height: 700px;
+    padding-bottom: 300px;
   }
   #es-rc-content.es-rc .es-kv__packshot {
     display: none;
@@ -443,13 +669,21 @@ body {
     position: relative;
     z-index: 1;
   }
-  #es-rc-content.es-rc .es-kv__text {
-    width: 500px;
+  #es-rc-content.es-rc .es-kv__title-group {
     position: absolute;
-    left: 20px;
-    top: 70%;
-    text-align: left;
-    font-size: 15px;
+    max-width: 600px;
+    left: 25px;
+    top: -3%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #es-rc-content.es-rc .es-kv__text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17px;
   }
   #es-rc-content.es-rc .es-triple__title {
     font-size: 50px;
@@ -459,17 +693,12 @@ body {
   }
 }
 @media screen and (min-width: 998px) {
-  #es-rc-content.es-rc .es-kv__title-group {
-    position: absolute;
-    max-width: 600px;
-    left: 40px;
-    top: 5%;
-    margin: 0 auto;
-    text-align: center;
-  }
   #es-rc-content.es-rc .es-kv__title {
     padding: 15px;
-    font-size: 50px;
+    font-size: 40px;
+  }
+  #es-rc-content.es-rc .es-kv__title-group {
+    max-width: 455px;
   }
   #es-rc-content.es-rc .es-kv__packshot {
     position: absolute;
@@ -485,23 +714,11 @@ body {
     position: relative;
     z-index: 1;
   }
-  #es-rc-content.es-rc .es-kv__text {
-    width: 650px;
-    position: absolute;
-    left: 40px;
-    top: 75%;
-    text-align: left;
-    font-size: 15px;
-  }
-  #es-rc-content.es-rc .polygon {
-    width: 300px;
-    height: 700px;
-    background-color: black;
-    -webkit-clip-path: polygon(0% 0%, 100% 20%, 100% 95%, 0% 80%);
-            clip-path: polygon(0% 0%, 100% 20%, 100% 95%, 0% 80%);
-  }
   #es-rc-content.es-rc .es-possibilities__title {
     font-size: 36px;
+  }
+  #es-rc-content.es-rc .es-possibilities__title--first, #es-rc-content.es-rc .es-possibilities__title--second {
+    font-size: 45px;
   }
   #es-rc-content.es-rc .es-info__title {
     font-size: 36px;

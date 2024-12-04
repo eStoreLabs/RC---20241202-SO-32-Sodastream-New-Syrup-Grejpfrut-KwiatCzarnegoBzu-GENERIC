@@ -179,6 +179,7 @@ $bg-primary: #e8e2d4;
     &__text {
       @include text-hurme-regular;
       margin: 0 auto;
+      margin-bottom: 30px;
       text-align: center;
       padding: 0 10px;
       font-size: 16px;
@@ -220,6 +221,7 @@ $bg-primary: #e8e2d4;
 
   .es-possibilities {
     margin: 30px 0 0;
+    padding-top: 75px;
 
     &__title {
       position: relative;
@@ -248,11 +250,14 @@ $bg-primary: #e8e2d4;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      top: -60px;
     }
 
     &__title-group {
       position: relative;
       max-width: 50%;
+      min-width: 50%;
     }
 
     &__subtitle {
@@ -281,13 +286,6 @@ $bg-primary: #e8e2d4;
       @include img;
       max-width: 50%;
     }
-
-    .polygon {
-      width: 235px;
-      height: 200px;
-      background-color: black;
-      clip-path: polygon(0% 50%, 100% 25%, 110% 113%, 0% 74%);
-    }
   }
 
   .es-photo {
@@ -295,13 +293,11 @@ $bg-primary: #e8e2d4;
       max-width: 100%;
       display: block;
       margin: 0 auto;
-      padding: 20px 20px;
+      padding: 5px 5px;
     }
   }
 
   .es-triple {
-    padding: 0 15px;
-
     &__title {
       position: relative;
       margin: 0;
@@ -329,7 +325,6 @@ $bg-primary: #e8e2d4;
     }
     &__wrapper {
       display: flex;
-      padding: 40px 20px;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-around;
@@ -382,15 +377,15 @@ $bg-primary: #e8e2d4;
         position: absolute;
         top: 25px;
         left: 0;
-        @include text-hurme-bold;
+        @include text-hurme-black;
         color: $secondary;
-        font-size: 35px;
+        font-size: 45px;
         text-align: center;
       }
 
       &--first {
         top: 12%;
-        left: 24%;
+        left: 23%;
       }
 
       &--second {
@@ -413,6 +408,184 @@ $bg-primary: #e8e2d4;
       display: block;
       margin: 0 auto;
       min-width: 250px;
+    }
+  }
+
+  .es-recipes {
+    &__day-night-title {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      @include text-hurme-bold;
+      font-size: 18px;
+    }
+
+    &__day-night-description {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 30px;
+      @include text-hurme-regular;
+      font-size: 16px;
+    }
+
+    &__day-night {
+      position: relative;
+      margin-bottom: 50px;
+
+      &--second {
+        margin-bottom: 100px;
+      }
+    }
+
+    &__day-night-label {
+      position: absolute;
+      margin-top: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      @include text-gazpacho-bold;
+      font-size: 60px;
+
+      &--first {
+        color: $secondary;
+        top: 12%;
+        left: 40%;
+      }
+
+      &--second {
+        color: $primary;
+        top: -6%;
+        left: 0%;
+      }
+    }
+
+    &__img {
+      @include img;
+
+      &--night-desktop {
+        display: none;
+      }
+    }
+
+    &__day-night-recipe-content-title {
+      margin-bottom: 20px;
+      @include text-gazpacho-bold;
+      font-size: 30px;
+
+      &--small {
+        margin-bottom: 20px;
+        @include text-hurme-regular;
+        font-size: 16px;
+      }
+    }
+
+    &__day-night-recipe-content {
+      padding-left: 10px;
+      padding-right: 10px;
+      z-index: 1;
+      font-size: 13px;
+    }
+
+    &__day-night-recipe-content-ingredients-list {
+      padding-left: 20px;
+
+      & li {
+        margin-bottom: 10px;
+      }
+    }
+
+    // .polygon {
+    //   position: absolute;
+    //   z-index: -1;
+    //   top: -119px;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 1000px;
+    //   background-color: black;
+    //   -webkit-clip-path: polygon(0% 0%, 100% 16.9%, 100% 95%, 0% 84%);
+    //   clip-path: polygon(0% 0%, 100% 13.6%, 100% 95%, 0% 84%);
+    // }
+  }
+
+  .es-lemonade {
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      margin-bottom: 10px;
+      @include text-gazpacho-regular;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    &__image {
+      @include img;
+
+      &--bottle {
+        max-width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__content {
+      padding-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      @include text-hurme-regular;
+      margin-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__group {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__group-list {
+      max-width: 500px;
+    }
+
+    &__group-title {
+      // @include text-hurme-bold;
+      margin-bottom: 10px;
+    }
+
+    &__group-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__group-list-item-description {
+      max-width: 60%;
+    }
+
+    &__group-list-item-image {
+      @include img;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 70px;
+    }
+
+    &__bold {
+      @include text-hurme-bold;
+    }
+
+    &__image-group {
+      position: relative;
+    }
+
+    &__image-group-text {
+      position: absolute;
+      top: 43%;
+      left: 16%;
+      @include text-gazpacho-bold;
+      font-size: 25px;
     }
   }
 
@@ -456,34 +629,35 @@ $bg-primary: #e8e2d4;
   }
 
   .es-video {
-    margin: 0 auto 64px;
-    width: 80%;
+    margin: 0 auto 34px;
+    width: 95%;
     position: relative;
 
     &__title {
       margin: 0;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      text-transform: uppercase;
       font-size: 30px;
-      font-weight: 700;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
       text-align: center;
-      margin-bottom: 32px;
-      margin-top: 32px;
-      padding: 0 16px;
+      margin-bottom: 20px;
     }
     &__subtitle {
       margin: 0;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
+      @include text-gazpacho-regular;
       text-align: center;
-      margin-bottom: 32px;
-      margin-top: 32px;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    &__subtitle-second {
+      @include text-gazpacho-bold;
+      font-size: 23px;
+    }
+    &__text {
+      @include text-hurme-regular;
+      text-align: center;
+      max-width: 100%;
+      margin-bottom: 20px;
     }
     &__container {
       margin: 0 auto;
@@ -511,7 +685,43 @@ $bg-primary: #e8e2d4;
     }
   }
 
+  .es-photo {
+    &__text {
+      font-size: 23px;
+    }
+  }
+
   @media screen and (min-width: 500px) {
+    .es-recipes {
+      &__day-night-recipe-content {
+        font-size: 16px;
+      }
+
+      &__day-night {
+        margin-bottom: 100px;
+      }
+
+      &__day-night-label {
+        &--first {
+          top: 10%;
+          left: 44%;
+        }
+
+        &--second {
+          top: 3%;
+          left: 0%;
+        }
+      }
+
+      &__img {
+        &--night {
+          // object-fit: fill;
+          // height: 1300px;
+          // width: 100%;
+        }
+      }
+    }
+
     .es-triple__wrapper {
       flex-wrap: nowrap;
     }
@@ -521,13 +731,105 @@ $bg-primary: #e8e2d4;
         max-width: 300px;
       }
     }
+
+    .es-possibilities {
+      &__title-container {
+        top: -25px;
+      }
+    }
   }
 
+  @media screen and (min-width: 600px) {
+    .es-recipes {
+      display: flex;
+
+      &__day-night {
+        max-width: 50%;
+
+        &--second {
+          padding-top: 100px;
+        }
+      }
+
+      &__img {
+        &--night {
+          &-desktop {
+            display: block;
+          }
+          &-mobile {
+            display: none;
+          }
+        }
+      }
+
+      &__day-night-recipe-content {
+        &--dark {
+          top: 47%;
+        }
+      }
+
+      &__day-night-recipe-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 1;
+        font-size: 13px;
+
+        &--dark {
+          // position: relative;
+          position: absolute;
+          top: 35%;
+          left: 0;
+          z-index: 1;
+          color: $secondary;
+        }
+      }
+    }
+
+    .es-possibilities {
+      margin: 30px 0 0;
+      padding-top: 75px;
+
+      &__title-container {
+        top: 100px;
+      }
+
+      &__title {
+        font-size: 25px;
+      }
+
+      &__left,
+      &__right {
+        min-width: 50%;
+      }
+
+      &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    .es-info {
+      &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__left,
+      &__right {
+        max-width: 50%;
+      }
+    }
+  }
   @media screen and (min-width: 768px) {
     .es-kv {
       background: url('./static/img/kv-bg.png') no-repeat center center;
       background-size: cover;
       min-height: 700px;
+      padding-bottom: 300px;
 
       &__packshot {
         display: none;
@@ -557,13 +859,23 @@ $bg-primary: #e8e2d4;
         z-index: 1;
       }
 
-      &__text {
-        width: 500px;
+      &__title-group {
         position: absolute;
-        left: 20px;
-        top: 70%;
-        text-align: left;
-        font-size: 15px;
+        max-width: 600px;
+        left: 25px;
+        top: -3%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      &__text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 80%;
+        margin: 0 auto;
+        // position: absolute;
+        text-align: center;
+        font-size: 17px;
       }
     }
 
@@ -591,19 +903,15 @@ $bg-primary: #e8e2d4;
         // max-width: 50%;
       }
 
-      &__title-group {
-        position: absolute;
-        max-width: 600px;
-        left: 40px;
-        top: 5%;
-        margin: 0 auto;
-        text-align: center;
-      }
-
       &__title {
         padding: 15px;
-        font-size: 50px;
+        font-size: 40px;
       }
+
+      &__title-group {
+        max-width: 455px;
+      }
+
       &__packshot {
         position: absolute;
         right: 0;
@@ -619,26 +927,24 @@ $bg-primary: #e8e2d4;
         z-index: 1;
       }
 
-      &__text {
-        width: 650px;
-        position: absolute;
-        left: 40px;
-        top: 75%;
-        text-align: left;
-        font-size: 15px;
-      }
-    }
-
-    .polygon {
-      width: 300px;
-      height: 700px;
-      background-color: black;
-      clip-path: polygon(0% 0%, 100% 20%, 100% 95%, 0% 80%);
+      // &__text {
+      //   width: 650px;
+      //   position: absolute;
+      //   left: 40px;
+      //   top: 75%;
+      //   text-align: left;
+      //   font-size: 15px;
+      // }
     }
 
     .es-possibilities {
       &__title {
         font-size: 36px;
+
+        &--first,
+        &--second {
+          font-size: 45px;
+        }
       }
     }
 
@@ -646,6 +952,7 @@ $bg-primary: #e8e2d4;
       &__title {
         font-size: 36px;
       }
+
       &__text {
         font-size: 20px;
       }
