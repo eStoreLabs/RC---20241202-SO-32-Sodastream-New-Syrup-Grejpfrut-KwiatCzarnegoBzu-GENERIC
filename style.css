@@ -154,6 +154,10 @@ body {
   padding: 0 15px 25px;
   margin: 0 auto;
 }
+#es-rc-content.es-rc .es-info__text b {
+  font-family: "HurmeGeometricSans3-Bold";
+  font-weight: 700;
+}
 #es-rc-content.es-rc .es-possibilities {
   margin: 30px 0 0;
   padding-top: 75px;
