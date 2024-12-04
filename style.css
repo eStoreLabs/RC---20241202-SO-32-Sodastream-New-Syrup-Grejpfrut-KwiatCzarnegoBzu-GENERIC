@@ -227,6 +227,12 @@ body {
   margin: 0 auto;
   padding: 5px 5px;
 }
+#es-rc-content.es-rc .es-photo__img {
+  margin-left: -1%;
+}
+#es-rc-content.es-rc .es-photo__img--syrups {
+  margin: 0 auto;
+}
 #es-rc-content.es-rc .es-triple__title {
   position: relative;
   margin: 0;
