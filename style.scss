@@ -733,6 +733,15 @@ $bg-primary: #e8e2d4;
         font-size: 35px;
       }
     }
+
+    .es-photo {
+      &__img {
+        margin-left: -1%;
+        &--syrups {
+          margin: 0 auto;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -1285,6 +1294,15 @@ $bg-primary: #e8e2d4;
     .es-photo {
       &__text {
         font-size: 36px;
+      }
+
+      &__img {
+        max-width: 100%;
+        margin-left: -11%;
+
+        &--syrups {
+          margin: 0 auto;
+        }
       }
     }
 

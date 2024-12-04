@@ -587,6 +587,12 @@ body {
     left: 20%;
     font-size: 35px;
   }
+  #es-rc-content.es-rc .es-photo__img {
+    margin-left: -1%;
+  }
+  #es-rc-content.es-rc .es-photo__img--syrups {
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 600px) {
   #es-rc-content.es-rc .es-title {
@@ -985,6 +991,13 @@ body {
   }
   #es-rc-content.es-rc .es-photo__text {
     font-size: 36px;
+  }
+  #es-rc-content.es-rc .es-photo__img {
+    max-width: 100%;
+    margin-left: -11%;
+  }
+  #es-rc-content.es-rc .es-photo__img--syrups {
+    margin: 0 auto;
   }
   #es-rc-content.es-rc .es-triple {
     margin-top: -100px;
