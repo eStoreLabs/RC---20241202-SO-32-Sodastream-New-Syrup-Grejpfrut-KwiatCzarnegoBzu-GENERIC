@@ -465,38 +465,6 @@ body {
   font-weight: 700;
   font-size: 25px;
 }
-#es-rc-content.es-rc .es-your {
-  background: linear-gradient(transparent 0%, transparent 50%, #e5dcd3 50%, #e5dcd3 100%);
-}
-#es-rc-content.es-rc .es-your__title {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 28px;
-  font-family: "HurmeGeometricSans3-Bold", sans-serif;
-  text-align: center;
-}
-#es-rc-content.es-rc .es-your__img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 30px 15px 15px;
-}
-#es-rc-content.es-rc .es-your__text {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 16px;
-  font-family: "HurmeGeometricSans3-Light", sans-serif;
-  text-align: center;
-  padding: 0 15px 30px;
-}
 #es-rc-content.es-rc .es-video {
   margin: 0 auto 34px;
   width: 95%;
@@ -724,12 +692,6 @@ body {
     font-size: 36px;
   }
   #es-rc-content.es-rc .es-info__text {
-    font-size: 20px;
-  }
-  #es-rc-content.es-rc .es-your__title {
-    font-size: 36px;
-  }
-  #es-rc-content.es-rc .es-your__text {
     font-size: 20px;
   }
   #es-rc-content.es-rc .es-video__title {

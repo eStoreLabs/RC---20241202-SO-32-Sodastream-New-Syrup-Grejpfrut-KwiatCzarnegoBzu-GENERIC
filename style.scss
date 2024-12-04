@@ -337,10 +337,6 @@ $bg-primary: #e8e2d4;
     &__single {
       height: 100%;
       position: relative;
-
-      &--second {
-        // margin-top: -100px;
-      }
     }
     &__desc {
       margin: 0;
@@ -492,18 +488,6 @@ $bg-primary: #e8e2d4;
         margin-bottom: 10px;
       }
     }
-
-    // .polygon {
-    //   position: absolute;
-    //   z-index: -1;
-    //   top: -119px;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 1000px;
-    //   background-color: black;
-    //   -webkit-clip-path: polygon(0% 0%, 100% 16.9%, 100% 95%, 0% 84%);
-    //   clip-path: polygon(0% 0%, 100% 13.6%, 100% 95%, 0% 84%);
-    // }
   }
 
   .es-lemonade {
@@ -589,45 +573,6 @@ $bg-primary: #e8e2d4;
     }
   }
 
-  .es-your {
-    background: linear-gradient(
-      transparent 0%,
-      transparent 50%,
-      #e5dcd3 50%,
-      #e5dcd3 100%
-    );
-
-    &__title {
-      margin: 0;
-      padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      font-size: 28px;
-      font-family: 'HurmeGeometricSans3-Bold', sans-serif;
-      text-align: center;
-    }
-    &__img {
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-      padding: 30px 15px 15px;
-    }
-    &__text {
-      margin: 0;
-      padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      font-size: 16px;
-      font-family: 'HurmeGeometricSans3-Light', sans-serif;
-      text-align: center;
-      padding: 0 15px 30px;
-    }
-  }
-
   .es-video {
     margin: 0 auto 34px;
     width: 95%;
@@ -710,14 +655,6 @@ $bg-primary: #e8e2d4;
         &--second {
           top: 3%;
           left: 0%;
-        }
-      }
-
-      &__img {
-        &--night {
-          // object-fit: fill;
-          // height: 1300px;
-          // width: 100%;
         }
       }
     }
@@ -834,13 +771,6 @@ $bg-primary: #e8e2d4;
       &__packshot {
         display: none;
       }
-
-      &__logo {
-        // position: relative;
-        // margin: 0 20px;
-        // padding: 15px;
-        // max-width: 50%;
-      }
       &__title {
         font-size: 35px;
       }
@@ -879,9 +809,6 @@ $bg-primary: #e8e2d4;
       }
     }
 
-    .es-video {
-    }
-
     .es-triple {
       &__title {
         font-size: 50px;
@@ -896,13 +823,6 @@ $bg-primary: #e8e2d4;
   }
   @media screen and (min-width: 998px) {
     .es-kv {
-      &__logo {
-        // position: relative;
-        // margin: 0;
-        // padding: 15px 0;
-        // max-width: 50%;
-      }
-
       &__title {
         padding: 15px;
         font-size: 40px;
@@ -953,15 +873,6 @@ $bg-primary: #e8e2d4;
         font-size: 36px;
       }
 
-      &__text {
-        font-size: 20px;
-      }
-    }
-
-    .es-your {
-      &__title {
-        font-size: 36px;
-      }
       &__text {
         font-size: 20px;
       }
