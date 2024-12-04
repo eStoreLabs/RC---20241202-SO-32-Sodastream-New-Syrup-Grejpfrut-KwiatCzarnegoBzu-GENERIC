@@ -533,7 +533,6 @@ $bg-primary: #e8e2d4;
     }
 
     &__group-title {
-      // @include text-hurme-bold;
       margin-bottom: 10px;
     }
 
@@ -646,6 +645,12 @@ $bg-primary: #e8e2d4;
         margin-bottom: 100px;
       }
 
+      &__day-night-group {
+        max-width: 395px;
+        margin: 0 auto;
+        margin-left: 10%;
+      }
+
       &__day-night-label {
         &--first {
           top: 10%;
@@ -659,8 +664,33 @@ $bg-primary: #e8e2d4;
       }
     }
 
-    .es-triple__wrapper {
-      flex-wrap: nowrap;
+    .es-triple {
+      &__wrapper {
+        flex-wrap: nowrap;
+      }
+
+      &__desc-mobile {
+        &--first,
+        &--second,
+        &--third {
+          font-size: 70px;
+        }
+
+        &--first {
+          top: 12%;
+          left: 23%;
+        }
+
+        &--second {
+          top: 41%;
+          left: 37%;
+        }
+
+        &--third {
+          top: 61%;
+          left: 16%;
+        }
+      }
     }
 
     .es-video {
@@ -684,18 +714,14 @@ $bg-primary: #e8e2d4;
         max-width: 50%;
 
         &--second {
-          padding-top: 100px;
+          padding-top: 190px;
         }
       }
 
-      &__img {
-        &--night {
-          &-desktop {
-            display: block;
-          }
-          &-mobile {
-            display: none;
-          }
+      &__day-night-label {
+        &--second {
+          top: 10%;
+          left: 0%;
         }
       }
 
@@ -710,15 +736,6 @@ $bg-primary: #e8e2d4;
         padding-right: 10px;
         z-index: 1;
         font-size: 13px;
-
-        &--dark {
-          // position: relative;
-          position: absolute;
-          top: 35%;
-          left: 0;
-          z-index: 1;
-          color: $secondary;
-        }
       }
     }
 
@@ -727,7 +744,7 @@ $bg-primary: #e8e2d4;
       padding-top: 75px;
 
       &__title-container {
-        top: 100px;
+        top: 10px;
       }
 
       &__title {
@@ -746,6 +763,19 @@ $bg-primary: #e8e2d4;
         padding-left: 30px;
         padding-right: 30px;
       }
+
+      &__title-container {
+        // top: 0;
+      }
+
+      &__title {
+        font-size: 25x;
+
+        &--first,
+        &--second {
+          font-size: 35px;
+        }
+      }
     }
 
     .es-info {
@@ -758,6 +788,32 @@ $bg-primary: #e8e2d4;
       &__left,
       &__right {
         max-width: 50%;
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .es-triple {
+      &__desc-mobile {
+        &--first,
+        &--second,
+        &--third {
+          font-size: 90px;
+        }
+
+        &--first {
+          top: 12%;
+          left: 26%;
+        }
+
+        &--second {
+          top: 43%;
+          left: 40%;
+        }
+
+        &--third {
+          top: 63%;
+          left: 18%;
+        }
       }
     }
   }
@@ -803,7 +859,6 @@ $bg-primary: #e8e2d4;
         padding-bottom: 30px;
         width: 80%;
         margin: 0 auto;
-        // position: absolute;
         text-align: center;
         font-size: 17px;
       }
@@ -818,6 +873,54 @@ $bg-primary: #e8e2d4;
     .es-info {
       &__titleBig {
         font-size: 50px;
+      }
+    }
+
+    .es-recipes {
+      &__img {
+        &--night {
+          &-desktop {
+            display: block;
+          }
+          &-mobile {
+            display: none;
+          }
+        }
+      }
+      &__day-night-recipe-content {
+        &--first {
+          margin-top: -105px;
+        }
+      }
+      &__day-night {
+        &--first {
+          margin-top: -100px;
+        }
+
+        &--second {
+          padding-top: 100px;
+        }
+      }
+
+      &__day-night-label {
+        &--second {
+          top: 2%;
+          left: 0%;
+        }
+      }
+
+      &__day-night-recipe-content {
+        font-size: 18px;
+      }
+
+      &__day-night-recipe-content {
+        &--dark {
+          position: absolute;
+          top: 38%;
+          left: 0;
+          z-index: 1;
+          color: $secondary;
+        }
       }
     }
   }
@@ -846,18 +949,13 @@ $bg-primary: #e8e2d4;
         position: relative;
         z-index: 1;
       }
-
-      // &__text {
-      //   width: 650px;
-      //   position: absolute;
-      //   left: 40px;
-      //   top: 75%;
-      //   text-align: left;
-      //   font-size: 15px;
-      // }
     }
 
     .es-possibilities {
+      &__title-container {
+        top: 100px;
+      }
+
       &__title {
         font-size: 36px;
 
@@ -881,6 +979,14 @@ $bg-primary: #e8e2d4;
     .es-video {
       &__title {
         font-size: 36px;
+      }
+    }
+
+    .es-recipes {
+      &__day-night-recipe-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 24px;
       }
     }
   }
