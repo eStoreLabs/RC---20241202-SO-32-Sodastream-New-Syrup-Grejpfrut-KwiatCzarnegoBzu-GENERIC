@@ -1055,6 +1055,13 @@ body {
   #es-rc-content.es-rc .es-photo__text {
     font-size: 36px;
   }
+  #es-rc-content.es-rc .es-photo__img {
+    max-width: 100%;
+    margin-left: -9%;
+  }
+  #es-rc-content.es-rc .es-photo__img--syrups {
+    margin: 0 auto;
+  }
   #es-rc-content.es-rc .es-video__subtitle {
     font-size: 30px;
   }
