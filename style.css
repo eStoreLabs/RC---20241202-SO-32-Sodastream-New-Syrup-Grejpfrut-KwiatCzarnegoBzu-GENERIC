@@ -22,12 +22,6 @@
   font-family: "Gazpacho-Regular";
   src: local("Gazpacho-Regular"), url("./static/fonts/Gazpacho-Regular.woff2") format("truetype");
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 #es-rc-content.es-rc {
   font-family: "HurmeGeometricSans3-Regular", sans-serif;
   font-size: 16px;
@@ -51,6 +45,11 @@ body {
   font-family: "Gazpacho-Bold";
   font-weight: 700;
   font-size: 36px;
+}
+#es-rc-content.es-rc html,
+#es-rc-content.es-rc body {
+  margin: 0;
+  padding: 0;
 }
 #es-rc-content.es-rc * {
   box-sizing: border-box;
