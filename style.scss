@@ -36,12 +36,6 @@ $font-hurme-light: 'HurmeGeometricSans3-Light';
 $font-gazpacho-regular: 'Gazpacho-Regular';
 $font-gazpacho-bold: 'Gazpacho-Bold';
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 @mixin text-hurme-regular {
   font-family: $font-hurme-regular;
   font-weight: 400;
@@ -104,6 +98,12 @@ $bg-primary: #e8e2d4;
     margin-top: 32px;
     @include text-gazpacho-bold;
     font-size: 36px;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
   }
 
   * {
