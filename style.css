@@ -394,6 +394,7 @@
   padding-right: 10px;
   z-index: 1;
   font-size: 13px;
+  margin-top: -50px;
 }
 #es-rc-content.es-rc .es-recipes__day-night-recipe-content-ingredients-list {
   padding-left: 20px;
@@ -734,7 +735,7 @@
   }
   #es-rc-content.es-rc .es-kv__title-group {
     position: absolute;
-    max-width: 600px;
+    max-width: 455px;
     left: 25px;
     top: -3%;
     margin: 0 auto;
@@ -757,15 +758,6 @@
   #es-rc-content.es-rc .es-info__title--large {
     font-size: 42px;
     margin-right: 50px;
-  }
-  #es-rc-content.es-rc .es-recipes__img--night-desktop {
-    display: block;
-  }
-  #es-rc-content.es-rc .es-recipes__img--night-mobile {
-    display: none;
-  }
-  #es-rc-content.es-rc .es-recipes__day-night-recipe-content--first {
-    margin-top: -105px;
   }
   #es-rc-content.es-rc .es-recipes__day-night--first {
     margin-top: -100px;
@@ -794,13 +786,6 @@
   }
   #es-rc-content.es-rc .es-recipes__day-night-recipe-content {
     font-size: 18px;
-  }
-  #es-rc-content.es-rc .es-recipes__day-night-recipe-content--dark {
-    position: absolute;
-    top: 38%;
-    left: 0;
-    z-index: 1;
-    color: #ffffff;
   }
   #es-rc-content.es-rc .es-lemonade__content {
     display: flex;
@@ -841,6 +826,25 @@
   }
   #es-rc-content.es-rc .es-lemonade__subtitle {
     font-size: 40px;
+  }
+}
+@media screen and (min-width: 825px) {
+  #es-rc-content.es-rc .es-recipes__img--night-desktop {
+    display: block;
+  }
+  #es-rc-content.es-rc .es-recipes__img--night-mobile {
+    display: none;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night-recipe-content--first {
+    margin-top: -105px;
+  }
+  #es-rc-content.es-rc .es-recipes__day-night-recipe-content--dark {
+    margin-top: 0;
+    position: absolute;
+    top: 38%;
+    left: 0;
+    z-index: 1;
+    color: #ffffff;
   }
 }
 @media screen and (min-width: 998px) {

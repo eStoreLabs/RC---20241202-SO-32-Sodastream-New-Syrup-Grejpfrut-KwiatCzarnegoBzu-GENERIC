@@ -493,6 +493,7 @@ $bg-primary: #e8e2d4;
       padding-right: 10px;
       z-index: 1;
       font-size: 13px;
+      margin-top: -50px;
     }
 
     &__day-night-recipe-content-ingredients-list {
@@ -936,7 +937,7 @@ $bg-primary: #e8e2d4;
 
       &__title-group {
         position: absolute;
-        max-width: 600px;
+        max-width: 455px;
         left: 25px;
         top: -3%;
         margin: 0 auto;
@@ -971,23 +972,6 @@ $bg-primary: #e8e2d4;
     }
 
     .es-recipes {
-      &__img {
-        &--night {
-          &-desktop {
-            display: block;
-          }
-          &-mobile {
-            display: none;
-          }
-        }
-      }
-
-      &__day-night-recipe-content {
-        &--first {
-          margin-top: -105px;
-        }
-      }
-
       &__day-night {
         &--first {
           margin-top: -100px;
@@ -1022,16 +1006,6 @@ $bg-primary: #e8e2d4;
 
       &__day-night-recipe-content {
         font-size: 18px;
-      }
-
-      &__day-night-recipe-content {
-        &--dark {
-          position: absolute;
-          top: 38%;
-          left: 0;
-          z-index: 1;
-          color: $secondary;
-        }
       }
     }
 
@@ -1094,6 +1068,38 @@ $bg-primary: #e8e2d4;
       }
     }
   }
+  @media screen and (min-width: 825px) {
+    .es-recipes {
+      &__img {
+        &--night {
+          &-desktop {
+            display: block;
+          }
+          &-mobile {
+            display: none;
+          }
+        }
+      }
+
+      &__day-night-recipe-content {
+        &--first {
+          margin-top: -105px;
+        }
+      }
+
+      &__day-night-recipe-content {
+        &--dark {
+          margin-top: 0;
+          position: absolute;
+          top: 38%;
+          left: 0;
+          z-index: 1;
+          color: $secondary;
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 998px) {
     .es-kv {
       &__title {
