@@ -245,7 +245,7 @@ $bg-primary: #e8e2d4;
       &--second {
         position: absolute;
         top: 44%;
-        left: 0;
+        left: -10px;
         color: $bg-primary;
       }
     }
@@ -656,6 +656,14 @@ $bg-primary: #e8e2d4;
     }
   }
 
+  @media screen and (min-width: 400px) {
+    .es-possibilities {
+      &__title-container {
+        top: -45px;
+      }
+    }
+  }
+
   @media screen and (min-width: 500px) {
     .es-recipes {
       &__day-night-recipe-content {
@@ -682,6 +690,12 @@ $bg-primary: #e8e2d4;
           top: 3%;
           left: 0%;
         }
+      }
+    }
+
+    .es-possibilities {
+      &__title-container {
+        top: -25px;
       }
     }
 
@@ -725,12 +739,6 @@ $bg-primary: #e8e2d4;
         max-width: 80%;
         margin: 0 auto;
         margin-bottom: 30px;
-      }
-    }
-
-    .es-possibilities {
-      &__title-container {
-        top: -25px;
       }
     }
 
@@ -841,6 +849,9 @@ $bg-primary: #e8e2d4;
         &--first,
         &--second {
           font-size: 35px;
+        }
+        &--second {
+          left: 0;
         }
       }
     }
@@ -1041,7 +1052,7 @@ $bg-primary: #e8e2d4;
 
       &__texts {
         max-width: 50%;
-        padding-left: 10%;
+        padding-left: 2%;
       }
 
       &__text {
@@ -1230,8 +1241,6 @@ $bg-primary: #e8e2d4;
       }
 
       &__day-night-label {
-        font-size: 132px;
-
         &--first {
           top: 10.4%;
           left: 52%;
@@ -1255,6 +1264,11 @@ $bg-primary: #e8e2d4;
         &--coctail {
           max-width: 100%;
         }
+      }
+
+      &__texts {
+        max-width: 50%;
+        padding-left: 2%;
       }
 
       &__image-group-text {
@@ -1326,7 +1340,7 @@ $bg-primary: #e8e2d4;
         &--first,
         &--second,
         &--third {
-          font-size: 170px;
+          font-size: 160px;
         }
 
         &--first {
@@ -1389,7 +1403,7 @@ $bg-primary: #e8e2d4;
 
       &__img {
         max-width: 100%;
-        margin-left: -9%;
+        margin-left: -12%;
 
         &--syrups {
           margin: 0 auto;
@@ -1446,6 +1460,10 @@ $bg-primary: #e8e2d4;
     }
 
     .es-recipes {
+      &__day-night-label {
+        font-size: 132px;
+      }
+
       &__day-night-recipe-content {
         &--dark {
           position: absolute;
@@ -1498,6 +1516,16 @@ $bg-primary: #e8e2d4;
         &--grapefruit {
           margin-top: 6%;
           margin-right: 9%;
+        }
+      }
+    }
+
+    .es-triple {
+      &__desc-mobile {
+        &--first,
+        &--second,
+        &--third {
+          font-size: 170px;
         }
       }
     }
